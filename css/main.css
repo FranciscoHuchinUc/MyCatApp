@@ -161,6 +161,12 @@ a{
     text-align: justify;
 }
 
+.abount__img {
+    width: 400px;
+    height: auto;
+    margin-top: 2rem;
+}
+
 .section {
     display: flex;
     flex-direction: column;
@@ -353,12 +359,8 @@ a{
         background-color: var(--firs-color);
         transition: width .2s ease-in;
     }
-    .about {
-        display: grid;
-        padding: 5rem 1rem;
-    }
     .abount__img {
-        width: 300px;
+        width: clamp(300px, 50%, 500px);
     }
     .section {
         padding: 5rem 1rem; 
@@ -377,6 +379,11 @@ a{
         max-width: 320px;
         height: 200px;
     }
+    .data__breed {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .name__breed {
         margin: 0;
     }
@@ -387,22 +394,16 @@ a{
     }
 }
 
-@media screen and (max-width: 768px) {
-    :root {
-        --logo: 1.5rem;
-        --smallest: .9rem;
-        --details: 1rem;
-        --title: 2rem;
-        --header: 5rem;
+@media screen and (max-width: 860px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 1rem;
+        align-items: center;
     }
-    .header {
-        padding: 1.5rem 1rem;
-    }
-    .abount__img {
-        width: 400px;
-    }
-    .img__nutrition {
-        width: 350px;
-        height: 200px;
+    .data__img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
