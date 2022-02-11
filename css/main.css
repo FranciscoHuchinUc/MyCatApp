@@ -406,4 +406,7 @@ a{
         flex-direction: column;
         align-items: center;
     }
+    .name__breed {
+        margin-left: 0;
+    }
 }
