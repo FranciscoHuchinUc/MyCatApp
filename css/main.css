@@ -225,7 +225,6 @@ a{
     max-width: 500px;
     height: 300px;
     border-radius: 5px;
-    background-image: url('/img/cover.png');
     object-fit: cover;
     z-index: -3;
 }
